@@ -1,4 +1,6 @@
-.body{
+.stats{
     text-align: center;
     background-color: turquoise;
+    padding-top: 5%;
+    margin-top: 20px;
 }

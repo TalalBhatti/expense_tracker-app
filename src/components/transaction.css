@@ -1,0 +1,25 @@
+.transaction{
+    text-align: center;
+    background-color: white;
+    padding-top: 5%;
+    margin-top: 20px;
+}
+.transaction h3{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.amount{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+.numbers{
+    width: 100%;
+}
+
+.buttons{
+    margin-top: 30px;
+}
