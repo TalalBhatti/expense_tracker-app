@@ -7,12 +7,18 @@ import {Container,Row,Col} from 'react-bootstrap';
 const Stats = (props) => {
     return(
     <div className="stats">
-    <h3> Your Available Balance </h3>
-    <h6>$920823</h6>
+        <div className="title">
+            <h3> Your Available Balance </h3>
+            <h5>$920823</h5>
+        </div>
     <Container>
      <Row>
-    <Col ><h4>Expenses</h4><h4>$8736</h4></Col>
-    <Col ><h4>Balance</h4><h4>$27857</h4></Col>
+     <span className="block-example border ">
+    <Col ><h4>Income</h4><h5>$8736</h5></Col>
+    </span>
+    <span className="block-example border ">
+    <Col ><h4>Expenses</h4><h5>$27857</h5></Col>
+    </span>
      </Row>
     </Container>
    </div>
