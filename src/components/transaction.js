@@ -9,7 +9,6 @@ const Transaction = (props) => {
   let { addTransaction } = useContext(TransactionContext);
   let [newDesc, setDesc] = useState("");
   let [newAmount, setAmount] = useState(0);
-  // const Stats = (props) => {
   const handleAdditon = (event) => {
     event.preventDefault();
     console.log(newDesc, newAmount);
@@ -38,5 +37,4 @@ const Transaction = (props) => {
     </div>
   )
 }
-//}
 export default Transaction;
