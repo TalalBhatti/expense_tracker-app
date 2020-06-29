@@ -1,4 +1,24 @@
 .history{
     margin-top: 20px;
-    background-color: cyan;
+    justify-content: center;
+    width: 98%;
+    text-align: center;
+}
+.history h3{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.transition-list > li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 2px 0px 0px;
+    background-color: black;
+    color: white;
+    margin: 5px 0px 0px 0px;
+    width: 100%;
+    margin-left: -4%;
 }

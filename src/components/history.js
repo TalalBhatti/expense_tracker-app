@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './history.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container,Row,Col} from 'react-bootstrap';
+import {TransactionContext} from '../context/transContext.js';
 
-
-const Stats = (props) => {
+const History = (props) => {
+    let {transactions} = useContext(TransactionContext);
+    console.log(transactions)
     return(
     <div className="history">
     <h3> History </h3>
-    <h6>XYZ</h6>
+    <ul className="transition-list">
+        {transactions.map((transObj, ind)=>{
+            return(<li key={ind}>
+                <span>{transObj.desc}</span>
+                <span>{transObj.amount}</span>
+            </li>
+            )
+        })}
+    </ul>
    </div>
     )}
-export default Stats;
+export default History;
