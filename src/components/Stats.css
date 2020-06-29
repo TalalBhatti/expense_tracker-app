@@ -15,10 +15,7 @@
     width: 40%;
 }
 .title {
-    margin: 0.3rem;
     background-color: black;
     color: white;
-    justify-content: center;
-    width: 98%;
-    text-align: center;
+    width: 100%;
 }

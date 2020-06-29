@@ -2,13 +2,14 @@ import React, {createContext, useReducer} from "react";
 import TransactionReducer from './transreducer';
 
 
-let initialTransactions = [
+const initialTransactions = [
     {amount: 500, desc: "Cash"},
     {amount: -700, desc: "Book"},
     {amount: 900, desc: "Headphones"}
 ]
 
 export const TransactionContext = createContext(initialTransactions);
+export const deleteTransaction = createContext(initialTransactions);
 
 export const TransactionProvider = ({children})=> {
     let [state, dispatch] = useReducer(TransactionReducer, initialTransactions)
@@ -23,12 +24,19 @@ export const TransactionProvider = ({children})=> {
         }
         )
     }
+    function deleteTransaction(ind){
+        dispatch({
+            type: "DELETE_TRANSACTION",
+            payload: ind,
+        })
+    }
 
 
 return(
     <TransactionContext.Provider value={{
         transactions: state,
-        addTransaction
+        addTransaction,
+        deleteTransaction
     }}>
         {children}
     </TransactionContext.Provider>
