@@ -14,6 +14,7 @@ const Transaction = (props) => {
     event.preventDefault();
     console.log(newDesc, newAmount);
     addTransaction({
+      id: Math.floor(Math.random() * 10),
       amount: Number(newAmount),
       desc: newDesc,
     })

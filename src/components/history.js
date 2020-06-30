@@ -11,11 +11,11 @@ const History = (props) => {
     <div className="history">
     <h3> History </h3>
     <ul className="transition-list">
-        {transactions.map((transObj, ind)=>{
-            return(<li key={ind}>
+        {transactions.map((transObj, id)=>{
+            return(<li key={id}>
                 <span>{transObj.desc}</span>
                 <span>{transObj.amount}</span>
-                <button onClick= {() => deleteTransaction(transactions.ind)}>x</button>
+                <button onClick= {() => deleteTransaction(transactions.id)}>x</button>
             </li>
             )
         })}

@@ -3,9 +3,9 @@ import TransactionReducer from './transreducer';
 
 
 const initialTransactions = [
-    {amount: 500, desc: "Cash"},
-    {amount: -700, desc: "Book"},
-    {amount: 900, desc: "Headphones"}
+    {id:1, amount: 500, desc: "Cash"},
+    {id:2, amount: -700, desc: "Book"},
+    {id:3, amount: 900, desc: "Headphones"}
 ]
 
 export const TransactionContext = createContext(initialTransactions);
@@ -17,17 +17,14 @@ export const TransactionProvider = ({children})=> {
     function addTransaction(transObj){
         dispatch({
             type: "ADD_TRANSACTION",
-            payload: {
-                amount: transObj.amount,
-                desc: transObj.desc
-            },
+            payload: transObj
         }
         )
     }
-    function deleteTransaction(ind){
+    function deleteTransaction(id){
         dispatch({
             type: "DELETE_TRANSACTION",
-            payload: ind,
+            payload: id,
         })
     }
 
