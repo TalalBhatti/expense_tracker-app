@@ -34,10 +34,10 @@ const Stats = (props) => {
             </div>
             <Container>
                 <Row>
-                    <span className="block-example border" style={{backgroundColor: '#88D969',}}>
+                    <span className="block-example border" style={{backgroundColor: '#35ae4c',color: 'white'}}>
                         <Col ><h4>Income</h4><h5>${getIncome()}</h5></Col>
                     </span>
-                    <span className="block-example border "style={{backgroundColor: '#88D969',}}>
+                    <span className="block-example border "style={{backgroundColor: '#ce4242',color: 'white'}}>
                         <Col ><h4>Expenses</h4><h5>${getExpense()}</h5></Col>
                     </span>
                 </Row>

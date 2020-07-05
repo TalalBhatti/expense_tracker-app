@@ -1,11 +1,10 @@
 .transaction{
     text-align: center;
-    background-color: white;
+    background-color: #b3cde0;
     padding-top: 5%;
-    margin-top: 20px;
 }
 .transaction h3{
-    background-color: black;
+    background-color: #03396c;
     color: white;
     padding: 5px;
     margin-bottom: 20px;
@@ -21,7 +20,8 @@
 }
 
 .buttons{
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 
 }
 body{

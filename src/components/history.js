@@ -13,9 +13,10 @@ const History = (props) => {
     <ul className="transition-list">
         {transactions.map((transObj, id)=>{
             return(<li key={id}>
-                <span>{transObj.desc}</span>
+                
+                <span><button className="delete" onClick= {() => deleteTransaction(transactions.id)}>X</button>
+             {transObj.desc}</span>
                 <span>{transObj.amount}</span>
-                <button onClick= {() => deleteTransaction(transactions.id)}>x</button>
             </li>
             )
         })}

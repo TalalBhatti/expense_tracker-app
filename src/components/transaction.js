@@ -33,7 +33,7 @@ const Transaction = (props) => {
         </div>
 
         <div className="buttons">
-          <Button type="submit" value="Add Transaction" variant="secondary" size="sm" block>Preceed</Button>
+          <Button type="submit" value="Add Transaction" >Preceed</Button>
         </div>
       </form>
     </div>

@@ -1,11 +1,12 @@
 .history{
-    margin-top: 20px;
     justify-content: center;
-    width: 98%;
+    width: 100%;
     text-align: center;
+    background-color: #b3cde0;
+    padding: 8px;
 }
 .history h3{
-    background-color: black;
+    background-color: #03396c;
     color: white;
     padding: 3px;
     justify-content: center;
@@ -15,10 +16,20 @@
 .transition-list > li {
     display: flex;
     justify-content: space-between;
-    padding: 5px 2px 0px 0px;
-    background-color: black;
+    padding: 0px 3px 3px 0px;
+    background-color: #1e4161;
     color: white;
-    margin: 5px 0px 0px 0px;
+    margin: 8px 0px 0px 0px;
     width: 100%;
-    margin-left: -4%;
+}
+button.delete{
+    background-color: #b3cde0;
+    color: black;
+    cursor: pointer;
+    /* height: 25px;
+    width: 25px; */
+    text-align: center;
+    font-size: xx-small;
+    margin-left: -20px;
+    border: 1px solid black;
 }

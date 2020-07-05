@@ -1,7 +1,9 @@
 .stats{
     text-align: center;
-    background-color: white;
+    background-color: #b3cde0;
     margin-top: 40px;
+    padding: 7px;
+    margin-bottom: auto;
 }
 
 .row{
@@ -9,13 +11,14 @@
 }
 
 .block-example {
-    margin: 0.3rem;
-    background-color: #eee;
+    margin: 1rem;
     justify-content: space-around;
     width: 40%;
+    padding: 5px;
+
 }
 .title {
-    background-color: black;
+    background-color: #03396c;
     color: white;
     width: 100%;
 }
