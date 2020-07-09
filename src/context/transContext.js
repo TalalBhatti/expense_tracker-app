@@ -1,5 +1,5 @@
 import React, {createContext, useReducer} from "react";
-import TransactionReducer from './transreducer';
+import TransactionReducer from "./TransReducer.js";
 
 
 const initialTransactions = [
@@ -30,11 +30,13 @@ export const TransactionProvider = ({children})=> {
 
 
 return(
-    <TransactionContext.Provider value={{
+    <TransactionContext.Provider value={
+        {
         transactions: state,
         addTransaction,
         deleteTransaction
-    }}>
+    }
+    }>
         {children}
     </TransactionContext.Provider>
 )

@@ -8,8 +8,8 @@ import { TransactionContext } from '../context/transContext.js'
 
 const Transaction = (props) => {
   let { addTransaction } = useContext(TransactionContext);
-  let [newDesc, setDesc] = useState("");
-  let [newAmount, setAmount] = useState(0);
+  let [newDesc, setNewDesc] = useState('');
+  let [newAmount, setNewAmount] = useState(0);
   const handleAdditon = (event) => {
     event.preventDefault();
     console.log(newDesc, newAmount);
@@ -25,11 +25,11 @@ const Transaction = (props) => {
       <form className="trans-form" onSubmit={handleAdditon}>
         <div className="amount">
           <h6>Amount desciption</h6>
-          <input className="numbers" onChange={(ev) => setDesc(ev.target.value)} placeholder="Maggie" ></input>
+          <input className="numbers" onChange={(ev) => setNewDesc(ev.target.value)} placeholder="Maggie" ></input>
         </div>
         <div className="amount">
           <h6>Amount</h6>
-          <input className="numbers" onChange={(ev) => setAmount(ev.target.value)} type="number" placeholder="2$" id="quantity" name="quantity" ></input>
+          <input className="numbers" onChange={(ev) => setNewAmount(ev.target.value)} type="number" placeholder="2$" id="quantity" name="quantity" ></input>
         </div>
 
         <div className="buttons">

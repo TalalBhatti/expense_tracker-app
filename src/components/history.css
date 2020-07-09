@@ -13,7 +13,7 @@
     width: 100%;
     text-align: center;
 }
-.transition-list > li {
+.transition-list {
     display: flex;
     justify-content: space-between;
     padding: 0px 3px 3px 0px;
@@ -23,13 +23,15 @@
     width: 100%;
 }
 button.delete{
-    background-color: #b3cde0;
+    background-color: rgb(206, 66, 66);
     color: black;
     cursor: pointer;
     /* height: 25px;
     width: 25px; */
-    text-align: center;
+    /* text-align: center; */
     font-size: xx-small;
     margin-left: -20px;
-    border: 1px solid black;
+    margin-top: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
 }

@@ -1,5 +1,5 @@
 const TransactionReducer = (state, action) => {
-    console.log(state.initialTransactions);
+    console.log(state);
     switch (action.type) {
         case 'ADD_TRANSACTION':
             return [action.payload, ...state]
