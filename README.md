@@ -4,6 +4,8 @@ this project is made by
 • context api
 • react hooks
 • bootstrap
+You can add your transaction and can keep a record of your Acount balance
+~ For expenses add - to the transaction tab
 
 ## Available Scripts
 
